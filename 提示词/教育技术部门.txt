@@ -1,0 +1,83 @@
+// 教育技术部门
+educationTechnology: {
+  techImplementation: {
+    title: "教育技术实施方案",
+    prompt: `请设计一份在{schoolType}学校实施"{technology}"技术的方案。
+
+背景情况：
+{background}
+
+要求：
+1. 技术介绍和教育价值分析
+2. 实施目标和预期效果
+3. 硬件和软件需求清单
+4. 实施步骤和时间安排
+5. 教师培训计划
+6. 课程整合建议
+7. 评估和反馈机制
+8. 可能的挑战和应对策略
+9. 经费预算建议
+
+方案应注重实用性和可行性，考虑学校实际情况和教育需求。`,
+    parameters: ["schoolType", "technology", "background"]
+  },
+  digitalResourceDevelopment: {
+    title: "数字教育资源开发指南",
+    prompt: `请提供一份"{resourceType}"类型数字教育资源的开发指南。
+
+适用学科：{subject}
+适用年级：{grade}
+
+要求：
+1. 资源设计原则和标准
+2. 内容选择和组织建议
+3. 界面设计和交互设计要点
+4. 技术实现路径和工具推荐
+5. 教学设计融入方法
+6. 测试和评估方法
+7. 版权和伦理考量
+8. 优秀案例分析（1-2个）
+
+指南应注重教育性和技术性的结合，确保资源的有效性和易用性。`,
+    parameters: ["resourceType", "subject", "grade"]
+  },
+  techEvaluation: {
+    title: "教育技术评估方案",
+    prompt: `请设计一份评估"{technology}"教育技术应用效果的方案。
+
+应用场景：{scenario}
+
+要求：
+1. 评估目标和关键问题
+2. 评估维度和指标体系
+3. 数据收集方法和工具
+4. 评估流程和时间安排
+5. 数据分析方法
+6. 结果呈现和报告格式
+7. 改进建议框架
+8. 评估伦理和注意事项
+
+方案应科学全面，既关注技术本身，也关注教育效果和用户体验。`,
+    parameters: ["technology", "scenario"]
+  },
+  techTraining: {
+    title: "教师技术培训计划",
+    prompt: `请设计一份关于"{technology}"的教师技术培训计划。
+
+培训对象：{targetTeachers}
+培训目标：{trainingGoals}
+
+要求：
+1. 培训内容模块划分
+2. 每个模块的具体目标和内容
+3. 培训方式和活动设计
+4. 培训资源和材料清单
+5. 培训时间安排和进度
+6. 实践任务和应用指导
+7. 评估和认证方式
+8. 后续支持和社区建设
+
+计划应注重实用性和针对性，满足不同层次教师的需求，促进技术与教学的融合。`,
+    parameters: ["technology", "targetTeachers", "trainingGoals"]
+  }
+}

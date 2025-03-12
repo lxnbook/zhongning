@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 运行前端代码的 lint-staged
+cd frontend && npx lint-staged 

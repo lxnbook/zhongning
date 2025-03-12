@@ -1,0 +1,3 @@
+cd frontend
+npx create-react-app .
+npm install antd @ant-design/icons axios redux react-redux redux-thunk echarts react-router-dom 

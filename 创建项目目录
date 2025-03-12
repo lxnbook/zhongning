@@ -1,0 +1,2 @@
+mkdir -p edu-ai-assistant/{frontend,backend,docs,scripts}
+cd edu-ai-assistant 

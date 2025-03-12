@@ -1,0 +1,45 @@
+.dashboard-container {
+  padding-bottom: 40px;
+}
+
+.hero-banner .ant-carousel .slick-slide {
+  text-align: center;
+  overflow: hidden;
+}
+
+.department-card {
+  transition: all 0.3s;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.department-icon {
+  font-size: 48px;
+  color: #1890ff;
+  margin-bottom: 16px;
+}
+
+.feature-card {
+  transition: all 0.3s;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    margin-bottom: 20px;
+  }
+  
+  .banner-slide {
+    height: 300px !important;
+    padding: 20px !important;
+  }
+} 

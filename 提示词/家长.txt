@@ -1,0 +1,65 @@
+// 家长角色
+parent: {
+  learningSupport: {
+    title: "家庭学习支持策略",
+    prompt: `请为{grade}年级{subject}学科提供家庭学习支持策略。
+
+孩子学习情况：
+{learningStatus}
+
+要求：
+1. 学科特点和学习要点分析
+2. 家庭学习环境创设建议
+3. 学习习惯培养方法
+4. 具体的辅导策略和方法
+5. 常见学习问题及解决方案
+6. 学习资源推荐
+7. 亲子互动学习活动设计
+8. 与学校和教师配合建议
+
+策略应注重可操作性，尊重孩子的学习特点和成长规律。`,
+    parameters: ["grade", "subject", "learningStatus"]
+  },
+  behaviorGuidance: {
+    title: "孩子行为引导建议",
+    prompt: `请针对{age}岁孩子的"{behavior}"行为提供家长引导建议。
+
+行为描述：
+{behaviorDescription}
+
+要求：
+1. 行为成因分析和发展心理学解释
+2. 行为对孩子发展的影响评估
+3. 家长情绪和态度建议
+4. 具体的沟通和引导策略
+5. 行为矫正或强化的方法
+6. 家庭规则和边界设立建议
+7. 典型案例和解决思路
+8. 需要专业帮助的信号和资源
+
+建议应尊重儿童发展规律，注重正面引导和有效沟通。`,
+    parameters: ["age", "behavior", "behaviorDescription"]
+  },
+  parentTeacherCommunication: {
+    title: "家校沟通指南",
+    prompt: `请提供一份关于"{situation}"情况的家校沟通指南。
+
+背景描述：
+{background}
+
+要求：
+1. 沟通目标和原则
+2. 沟通前的准备工作
+3. 沟通时机和方式选择
+4. 表达技巧和沟通策略
+5. 积极倾听和理解方法
+6. 可能的问题和应对方案
+7. 后续跟进和合作建议
+8. 沟通记录和效果评估
+
+指南应促进家校合作，以孩子发展为中心，建立积极的沟通关系。`,
+    parameters: ["situation", "background"]
+  },
+  childDevelopment: {
+    title: "儿童发展指导",
+    prompt: `

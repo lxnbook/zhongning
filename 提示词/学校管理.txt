@@ -1,0 +1,84 @@
+// 学校管理者角色
+schoolAdmin: {
+  schoolDevelopment: {
+    title: "学校发展规划",
+    prompt: `请为{schoolType}学校制定一份关于"{aspect}"方面的发展规划。
+
+学校基本情况：
+{schoolInfo}
+
+要求：
+1. 现状分析和问题诊断
+2. 发展愿景和总体目标
+3. 具体目标和发展指标
+4. 主要策略和举措（5-8项）
+5. 资源保障和条件建设
+6. 实施步骤和时间表
+7. 评估机制和调整策略
+8. 可能的风险和应对措施
+
+规划应具有前瞻性和可行性，符合教育规律和学校实际。`,
+    parameters: ["schoolType", "aspect", "schoolInfo"]
+  },
+  teacherManagement: {
+    title: "教师队伍管理方案",
+    prompt: `请设计一份{schoolType}学校的教师队伍管理方案，重点解决"{problem}"问题。
+
+教师队伍现状：
+{teacherStatus}
+
+要求：
+1. 问题分析和管理目标
+2. 教师招聘和配置策略
+3. 专业发展和培训体系
+4. 绩效评价和激励机制
+5. 团队建设和文化营造
+6. 管理制度和流程优化
+7. 资源支持和保障措施
+8. 实施步骤和预期效果
+
+方案应注重教师主体性和专业性，平衡管理效率和教师发展需求。`,
+    parameters: ["schoolType", "problem", "teacherStatus"]
+  },
+  schoolEvaluation: {
+    title: "学校评估方案",
+    prompt: `请设计一份{schoolType}学校的内部评估方案，重点评估"{aspect}"方面。
+
+评估背景：
+{background}
+
+要求：
+1. 评估目的和原则
+2. 评估维度和指标体系
+3. 评估方法和工具
+4. 评估主体和职责分工
+5. 评估流程和时间安排
+6. 数据分析和结果应用
+7. 改进机制和跟踪措施
+8. 评估伦理和注意事项
+
+方案应注重发展性评价理念，促进学校持续改进和质量提升。`,
+    parameters: ["schoolType", "aspect", "background"]
+  },
+  crisisManagement: {
+    title: "学校危机管理预案",
+    prompt: `请为{schoolType}学校制定一份应对"{crisisType}"危机的管理预案。
+
+学校情况：
+{schoolInfo}
+
+要求：
+1. 危机类型和风险评估
+2. 预防措施和早期预警
+3. 应急响应流程和级别
+4. 组织架构和职责分工
+5. 具体处置措施和步骤
+6. 沟通策略和信息发布
+7. 心理干预和后续支持
+8. 恢复和评估机制
+9. 培训和演练计划
+
+预案应全面、具体、可操作，注重实效性和针对性。`,
+    parameters: ["schoolType", "crisisType", "schoolInfo"]
+  }
+},

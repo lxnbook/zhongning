@@ -1,0 +1,4 @@
+cd ../backend
+npm init -y
+npm install express mongoose jsonwebtoken bcrypt cors dotenv axios morgan winston
+npm install --save-dev nodemon 
